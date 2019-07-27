@@ -215,4 +215,11 @@ body {
     background: #4aaaa5;
     border: 0 none;
   }
+
+  .wrapper {
+    /* Box-model */
+    width: 1024px;
   
+    /* Positioning */
+    margin: 40px auto;
+  }
