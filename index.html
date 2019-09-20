@@ -12,38 +12,130 @@
   </head>
 <body>
 
-  <static><header id="masthead"></static>
-    <div class="container">
-      <a href="index.html" id="logo">Jim Chung</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
-
-      <img src="C:\Users\yourd\Downloads\20160901_193217.jpg" class="auth-image" alt="Your Name">
-
-      <p> I am From Greenboro North Carolina. I moved here from charlotte Two years ago. i Enjoy the outdoors and any sports. I aslo have a passion for soccer and videosgames.</p>
-
-      <p> I've Been coding off and on since i was younger. It always intregued me how computers work. I also took a robot programing class in highschool and also was a National Technical Honor Society.</p>
-
-      <p> I currently live near UNCC university campus in an apartment with my girlfriend and one of my best friends for elementary school.</p>
-
-    </section>
-
+  
+<div class="l-site">
+  <div class="l-nav">
+    <nav class="nav">
+      <ul>
+        <li class="nav-primary"><a href="#">Home</a></li>
+        <li class="nav-primary"><a href="#">Information</a></li>
+        <li class="nav-primary"><a href="#">work</a></li>
+        <li class="nav-primary"><a href="#">People</a></li>
+        <li class="nav-secondary"><a href="#">Jobs</a></li>
+        <li class="nav-secondary"><a href="#">Blog</a></li>
+        <li class="nav-secondary"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </div>
+<!-- Title page-->
+  <div class="l-page">
+    <div class="menu">
+      <div class="menu-hamburger"></div>
+    </div>
+    <section class="band band-a">
+      <div class="band-container">
+        <div class="band-inner">
+          <h1 style="font-size:60px;">A coders Life</h1>
+        </div>
+      </div>
+    </section>
+<!--Information section-->
+    <section class="band band-b">
+        <h1 style=>Information about me</h1>
+      <div class="band-container">
+        <div class="band-inner">
+          <section class ="info-section" id="info">
+            <div class ="container">
+              <h2 class= "text-center mt-0" style="font-size: 50px;"> About me</h2>
+              <p> Im 20 years old and starting out as a developer, learning the base languages of HTML, CSS, Javascript, and now NODE.</p>
+            </div>
+            </section>
+        </div>
+      </div>
+    </section>
+<!--Portfolio portion-->
+    <section class="band band-c">
+        <h1>Porfolio HighLights</h1>
+      <div class="band-container">
+        <div class="band-inner">       
+          <section class="page-section" id="portfolio">
+            <div class="container">
+              <h2 class="text-center mt-0">Here are a few apps</h2>
+              <hr class="divider my-4">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 text-center">
+                  <div class="mt-5">
+                    <h3 class="Porfolio-name">pyhcic game</h3>
+                    <p class="text-muted mb-0">GGGGGGGGGGG</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                  <div class="mt-5">                    
+                    <h3 class="Porfolio-name">Train schedule</h3>
+                    <p class="text-muted mb-0">Train Scedule to track times and arrivals</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                  <div class="mt-5">
+                    <h3 class="Porfolio-name">New projects coming soon</h3>
+                    <p class="text-muted mb-0">new projects coming soon</p>
+                  </div>
+                </div>
+          </section>
+        </div>
+      </div>
+    </section>
+<!--Contact section-->
+    <section class="band band-d">
+      <div class="band-container">
+        <div class="band-inner">
+          <div id="container" class="container">
+            <section class="section">
+              <h1 style="font-size: 50px;">Contact</h1>
+              <p> If you would like to inquire more about coding and topics surronding it please feel free to contact me via email or phone.</p>
+        
+              <div class="row">
+                <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                  <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                  <div>+1 (336) 314-5634</div>
+                </div>
+                <div class="col-lg-4 mr-auto text-center">
+                  <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                  <!-- Make sure to change the email address in anchor text AND the link below! -->
+                  <a class="d-block" href="mailto:contact@yourwebsite.com">jchung225@gmail.com</a>
+                </div>
+              </div>
+        
+            </section>
+        
+          </div>
+        
+
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
 
   <footer>
     <div class="container">
       Copyright &copy; 
     </div>
   </footer>
+
+  <script>
+  $('.menu').on('click', function(){
+  if ($('.l-site').hasClass('is-open')) {
+    $('.menu').removeClass('is-active');
+  	$('.l-site').removeClass('is-open');
+  } else {
+    $('.menu').addClass('is-active');
+  	$('.l-site').addClass('is-open');
+  }
+});
+  </script>
+  
 </body>
 
 </html>
